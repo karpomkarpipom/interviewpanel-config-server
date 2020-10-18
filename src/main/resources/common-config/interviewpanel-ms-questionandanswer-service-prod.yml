@@ -1,0 +1,18 @@
+server:
+  port: 8081
+  
+  
+interviewpanel:
+  test:
+    email: selvasharesource@gmail.com
+
+    
+spring:
+  data: 
+    mongodb: 
+      authentication-database: admin
+      username: selva
+      password: selva
+      database: test
+      port: 27017
+      host: localhost
