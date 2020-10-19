@@ -1,13 +1,33 @@
 server:
   port: 8888
 
+#Below peroperty file native file location
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/common-config
+#  profiles:
+#    active: native
+#  application:
+#    name: config-server
+
+#configure with git
 spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/common-config
-  profiles:
-    active: native
+        git:
+          uri: https://github.com/karpomkarpipom/interviewpanel-config-centralized-properties.git
   application:
     name: config-server
+    
+management:
+  endpoints:
+    web: 
+      exposure:
+        include: '*'
+  security:
+    enabled: false
+    
