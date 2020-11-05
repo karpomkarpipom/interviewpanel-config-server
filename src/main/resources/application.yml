@@ -20,6 +20,7 @@ spring:
       server:
         git:
           uri: https://github.com/karpomkarpipom/interviewpanel-config-centralized-properties.git
+          default-label: oct_2020_release
   application:
     name: config-server
     
